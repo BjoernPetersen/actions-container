@@ -18,7 +18,7 @@ jobs:
     uses: BlindfoldedSurgery/actions-meta/.github/workflows/required.yml@v2
 
   mirror:
-    runs-on: ubicloud-standard-2-ubuntu-2404
+    runs-on: ubuntu-24.04
     if: github.event_name != 'pull_request'
     permissions:
       contents: write
