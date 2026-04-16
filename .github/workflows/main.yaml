@@ -18,12 +18,12 @@ jobs:
     uses: BlindfoldedSurgery/actions-meta/.github/workflows/required.yml@v2
 
   mirror:
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-slim
     if: github.event_name != 'pull_request'
     permissions:
       contents: write
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v6.0.2
         with:
           token: ${{ secrets.WORKFLOW_TOKEN }}
       - run: git remote add mirrored https://github.com/BlindfoldedSurgery/actions-container.git
