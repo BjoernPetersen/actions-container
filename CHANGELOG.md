@@ -1,3 +1,9 @@
+## v8.0.5 (2026-07-24)
+
+### Fix
+
+- **deps**: update dependency pre-commit to v4.6.1
+
 ## v8.0.4 (2026-06-03)
 
 ### Fix
